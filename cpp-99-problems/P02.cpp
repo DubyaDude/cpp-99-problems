@@ -5,7 +5,7 @@ namespace P02
 	int listSecondLastElement(std::list<int> intList)
 	{
 		intList.pop_back();
-		return intList.back();;
+		return intList.back();
 	}
 
 	int arraySecondLastElemant(int* intArray, int arrSize)

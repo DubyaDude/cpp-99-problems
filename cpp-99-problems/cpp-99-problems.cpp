@@ -3,6 +3,7 @@
 #include "Helper.h";
 #include "P01.h";
 #include "P02.h";
+#include "P03.h";
 
 int main(int argc, char* argv[])
 {
@@ -49,4 +50,29 @@ TEST(P02, List)
 
     ASSERT_EQ(P02::listSecondLastElement(testList2), 3);
     ASSERT_EQ(P02::listSecondLastElement(testList3), 2);
+}
+
+TEST(P03, Array)
+{
+    int testArray1[] = { 3 };
+    int testArray2[] = { 3, 1 };
+    int testArray3[] = { 3, 1, 6, 2, 9 };
+
+    ASSERT_EQ(P03::arrayKthElemant(testArray1, 0), 3);
+    ASSERT_EQ(P03::arrayKthElemant(testArray2, 1), 1);
+    ASSERT_EQ(P03::arrayKthElemant(testArray3, 3), 2);
+    ASSERT_EQ(P03::arrayKthElemant(testArray3, 4), 9);
+}
+
+TEST(P03, List)
+{
+    std::list<int> testList1 = { 3 };
+    std::list<int> testList2 = { 3, 1 };
+    std::list<int> testList3 = { 3, 1, 6, 2, 9 };
+
+
+    ASSERT_EQ(P03::listKthElement(testList1, 0), 3);
+    ASSERT_EQ(P03::listKthElement(testList2, 1), 1);
+    ASSERT_EQ(P03::listKthElement(testList3, 3), 2);
+    ASSERT_EQ(P03::listKthElement(testList3, 4), 9);
 }

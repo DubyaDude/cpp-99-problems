@@ -143,6 +143,7 @@
     <ClCompile Include="Helper.cpp" />
     <ClCompile Include="P01.cpp" />
     <ClCompile Include="P02.cpp" />
+    <ClCompile Include="P03.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -151,6 +152,7 @@
     <ClInclude Include="Helper.h" />
     <ClInclude Include="P01.h" />
     <ClInclude Include="P02.h" />
+    <ClInclude Include="P03.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
