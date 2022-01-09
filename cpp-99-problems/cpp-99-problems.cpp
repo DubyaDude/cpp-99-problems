@@ -15,6 +15,7 @@
 
 #include <iostream>
 #include "gtest/gtest.h";
+#include "Helper.h";
 #include "P1.h";
 
 int main(int argc, char* argv[])
@@ -30,9 +31,9 @@ TEST(P1, Array)
     int testArray2[] = { 3, 1 };
     int testArray3[] = { 3, 1, 6, 2, 9 };
 
-    ASSERT_EQ(P1::lastArrayElemant(testArray1, sizeof(testArray1) / sizeof(*testArray1)), 3);
-    ASSERT_EQ(P1::lastArrayElemant(testArray2, sizeof(testArray2) / sizeof(*testArray2)), 1);
-    ASSERT_EQ(P1::lastArrayElemant(testArray3, sizeof(testArray3) / sizeof(*testArray3)), 9);
+    ASSERT_EQ(P1::lastArrayElemant(testArray1, arraySize(testArray1)), 3);
+    ASSERT_EQ(P1::lastArrayElemant(testArray2, arraySize(testArray2)), 1);
+    ASSERT_EQ(P1::lastArrayElemant(testArray3, arraySize(testArray3)), 9);
 }
 
 TEST(P1, List)
