@@ -16,7 +16,8 @@
 #include <iostream>
 #include "gtest/gtest.h";
 #include "Helper.h";
-#include "P1.h";
+#include "P01.h";
+#include "P02.h";
 
 int main(int argc, char* argv[])
 {
@@ -25,24 +26,42 @@ int main(int argc, char* argv[])
     return RUN_ALL_TESTS();
 }
 
-TEST(P1, Array)
+TEST(P01, Array)
 {
     int testArray1[] = { 3 };
     int testArray2[] = { 3, 1 };
     int testArray3[] = { 3, 1, 6, 2, 9 };
 
-    ASSERT_EQ(P1::lastArrayElemant(testArray1, arraySize(testArray1)), 3);
-    ASSERT_EQ(P1::lastArrayElemant(testArray2, arraySize(testArray2)), 1);
-    ASSERT_EQ(P1::lastArrayElemant(testArray3, arraySize(testArray3)), 9);
+    ASSERT_EQ(P01::lastArrayElemant(testArray1, arraySize(testArray1)), 3);
+    ASSERT_EQ(P01::lastArrayElemant(testArray2, arraySize(testArray2)), 1);
+    ASSERT_EQ(P01::lastArrayElemant(testArray3, arraySize(testArray3)), 9);
 }
 
-TEST(P1, List)
+TEST(P01, List)
 {
     std::list<int> testList1 = { 3 };
     std::list<int> testList2 = { 3, 1 };
     std::list<int> testList3 = { 3, 1, 6, 2, 9 };
 
-    ASSERT_EQ(P1::lastListElement(testList1), 3);
-    ASSERT_EQ(P1::lastListElement(testList2), 1);
-    ASSERT_EQ(P1::lastListElement(testList3), 9);
+    ASSERT_EQ(P01::lastListElement(testList1), 3);
+    ASSERT_EQ(P01::lastListElement(testList2), 1);
+    ASSERT_EQ(P01::lastListElement(testList3), 9);
+}
+
+TEST(P02, Array)
+{
+    int testArray2[] = { 3, 1 };
+    int testArray3[] = { 3, 1, 6, 2, 9 };
+
+    ASSERT_EQ(P02::secondLastArrayElemant(testArray2, arraySize(testArray2)), 3);
+    ASSERT_EQ(P02::secondLastArrayElemant(testArray3, arraySize(testArray3)), 2);
+}
+
+TEST(P02, List)
+{
+    std::list<int> testList2 = { 3, 1 };
+    std::list<int> testList3 = { 3, 1, 6, 2, 9 };
+
+    ASSERT_EQ(P02::secondLastListElement(testList2), 3);
+    ASSERT_EQ(P02::secondLastListElement(testList3), 2);
 }

@@ -24,22 +24,28 @@
     <ClCompile Include="cpp-99-problems.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="P1.cpp">
+    <ClCompile Include="P01.cpp">
       <Filter>Source Files\Problems</Filter>
     </ClCompile>
     <ClCompile Include="Helper.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="P02.cpp">
+      <Filter>Source Files\Problems</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="P1.h">
+    <ClInclude Include="P01.h">
       <Filter>Header Files\Problems</Filter>
     </ClInclude>
     <ClInclude Include="Helper.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="P02.h">
+      <Filter>Header Files\Problems</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
