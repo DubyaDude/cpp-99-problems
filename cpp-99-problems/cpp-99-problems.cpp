@@ -4,6 +4,7 @@
 #include "P01.h";
 #include "P02.h";
 #include "P03.h";
+#include "P04.h";
 
 int main(int argc, char* argv[])
 {
@@ -75,4 +76,27 @@ TEST(P03, List)
     ASSERT_EQ(P03::listKthElement(testList2, 1), 1);
     ASSERT_EQ(P03::listKthElement(testList3, 3), 2);
     ASSERT_EQ(P03::listKthElement(testList3, 4), 9);
+}
+
+TEST(P04, Array)
+{
+    int testArray1[] = { 3 };
+    int testArray2[] = { 3, 1 };
+    int testArray3[] = { 3, 1, 6, 2, 9 };
+
+    ASSERT_EQ(P04::arraySize(testArray1), 1);
+    ASSERT_EQ(P04::arraySize(testArray2), 2);
+    ASSERT_EQ(P04::arraySize(testArray3), 5);
+}
+
+TEST(P04, List)
+{
+    std::list<int> testList1 = { 3 };
+    std::list<int> testList2 = { 3, 1 };
+    std::list<int> testList3 = { 3, 1, 6, 2, 9 };
+
+
+    ASSERT_EQ(P04::listSize(testList1), 1);
+    ASSERT_EQ(P04::listSize(testList2), 2);
+    ASSERT_EQ(P04::listSize(testList3), 5);
 }
