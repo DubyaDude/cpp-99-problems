@@ -2,6 +2,6 @@
 #include <list>
 namespace P01 
 {
-	int lastListElement(std::list<int> intList);
-	int lastArrayElemant(int *intArray, int arrSize);
+	int listLastElement(std::list<int> intList);
+	int arrayLastElemant(int *intArray, int arrSize);
 }
