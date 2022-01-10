@@ -1,10 +1,10 @@
 #include <iostream>
-#include "gtest/gtest.h";
-#include "Helper.h";
-#include "P01.h";
-#include "P02.h";
-#include "P03.h";
-#include "P04.h";
+#include "gtest/gtest.h"
+#include "Helper.h"
+#include "P01.h"
+#include "P02.h"
+#include "P03.h"
+#include "P04.h"
 
 int main(int argc, char* argv[])
 {
